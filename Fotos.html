@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumente & Downloads - Imkerverein Greifswald</title>
+    <style>
+        /* GLOBAL */
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+
+        /* TOP-BAR */
+        .site-header::before {
+            content: "Regional & Naturverbunden seit 1874";
+            display: block;
+            background: #e4a11b; /* Honiggelb */
+            color: #ffffff;
+            padding: 6px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* HEADER */
+        .site-header {
+            text-align: center;
+            background: #ffffff;
+            padding: 25px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .site-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* NAVIGATION */
+        .main-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 15px 0;
+            gap: 25px;
+            background: #ffffff;
+            border-bottom: 3px solid #e4a11b;
+        }
+        .main-nav li a {
+            text-decoration: none;
+            color: #444444;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .main-nav li a:hover,
+        .main-nav li a.active {
+            color: #e4a11b;
+        }
+
+        /* MAIN LAYOUT (Zentrierte einspaltige Ausrichtung wie im Impressum) */
+        .main-content {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* TEXTBEREICH mit Wabenmuster */
+        .text-sidebar {
+            background-color: #ffffff;
+            padding: 35px;
+            border: 1px solid #e6e6e6;
+            border-top: 4px solid #e4a11b; /* Gelbe Oberkante */
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%23e4a11b' stroke-width='1.2' opacity='0.12'/%3E%3C/svg%3E");
+            background-size: 35px 62.5px;
+        }
+
+        h2 {
+            color: #2b2b2b;
+            border-bottom: 2px solid #f0e3c4;
+            padding-bottom: 10px;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        /* STYLING FÜR DIE LINK-LISTE */
+        .download-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0 0;
+        }
+
+        .download-list li {
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fffdf7;
+            border: 1px solid #f0e3c4;
+            border-left: 4px solid #e4a11b; /* Akzentlinie links am Listenelement */
+            border-radius: 4px;
+        }
+
+        .download-list strong {
+            font-size: 16px;
+            color: #2b2b2b;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .download-list p {
+            font-size: 14px;
+            color: #555555;
+            margin: 0 0 10px 0;
+        }
+
+        .download-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #e4a11b;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .download-link:hover {
+            color: #2b2b2b;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #2b2b2b;
+            color: #ffffff;
+            margin-top: 60px;
+            font-size: 14px;
+            border-top: 4px solid #e4a11b;
+        }
+        footer a {
+            text-decoration: none;
+            color: #e4a11b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header mit Titel -->
+    <header class="site-header">
+        <h1>Imkerverein Greifswald</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Historie.html">Historisches</a></li>
+            <li><a href="Kontakte.html">Kontakte</a></li>
+            <li><a href="index.html" class="active">Zur Startseite</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptbereich -->
+    <main class="main-content">
+        <div class="text-sidebar">
+            <h2>Dokumente & Cloud-Archiv</h2>
+            <p>Hier finden Mitglieder und Interessierte wichtige Leitfäden, Anträge und Protokolle unseres Vereins. Die Links führen direkt zu den jeweiligen freigegebenen Ordnern auf unserem Google Drive:</p>
+            
+            <ul class="download-list">
+                <!-- Ordner 1 -->
+                <li>
+                    <strong>Öffentliche Dokumente & Anträge</strong>
+                    <p>Enthält die aktuelle Vereinssatzung, den Aufnahmeantrag des Imkervereins sowie Informationsmaterial für angehende Imker.</p>
+                    <a href="https://drive.google.com/drive/folders/1vJRnNTnlKLqMzFBEYH6gOXB-rK9b_ZUz?usp=drive_link" target="_blank" class="download-link">↳ Google Drive Ordner öffnen</a>
+                </li>
+                
+                <!-- Ordner 2 -->
+                <li>
+                    <strong>Fotoalbum</strong>
+                    <p>Zugriff auf öffentliche Fotos von den Bienenständen und Events des Greifswalder Imkervereins.</p>
+                    <a href="https://drive.google.com/drive/folders/15ZBu_z4ujXqcs6XA8jwrUoz9oodDcdmW?usp=drive_link" target="_blank" class="download-link">↳ Google Drive Ordner öffnen</a>
+                </li>
+                
+                <!-- Ordner 3 -->
+                <li>
+                    <strong>Schulungsmaterial & Imkerpraxis</strong>
+                    <p>Präsentationen, Dokumente und nützliche Leitfäden rund um die Bienengesundheit, Trachtpflanzen und Honigschleuderkurse.</p>
+                    <a href="https://drive.google.com/drive/folders/1x08gm5F-ITl39blTccDHhWxdBrdVOcXe?usp=drive_link" target="_blank" class="download-link">↳ Google Drive Ordner öffnen</a>
+                </li>
+            </ul>
+            
+            <p style="margin-top: 30px; font-size: 13px; color: #777777; font-style: italic;">
+                Hinweis: Beim Klicken auf die Links verlassen Sie unsere Webseite.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="Impressum.html">Impressum</a> | 
+        <a href="Datenschutz.html">Datenschutzerklärung</a>
+    </footer>
+
+</body>
+</html>

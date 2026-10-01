@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vereinsvorstand - Imkerverein Greifswald</title>
+    <style>
+        /* GLOBAL */
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+
+        /* TOP-BAR */
+        .site-header::before {
+            content: "Regional & Naturverbunden seit 1874";
+            display: block;
+            background: #e4a11b; /* Honiggelb */
+            color: #ffffff;
+            padding: 6px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* HEADER */
+        .site-header {
+            text-align: center;
+            background: #ffffff;
+            padding: 25px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .site-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* NAVIGATION */
+        .main-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 15px 0;
+            gap: 25px;
+            background: #ffffff;
+            border-bottom: 3px solid #e4a11b;
+        }
+        .main-nav li a {
+            text-decoration: none;
+            color: #444444;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .main-nav li a:hover,
+        .main-nav li a.active {
+            color: #e4a11b;
+        }
+
+        /* MAIN LAYOUT (Zentrierte einspaltige Ausrichtung wie im Impressum) */
+        .main-content {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* ÜBERSCHRIFT AUF DER SEITE */
+        .page-title {
+            text-align: center;
+            color: #2b2b2b;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        /* VORSTANDS-BOXEN */
+        .vorstand-box {
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 3px solid #e4a11b; /* Gelber Rahmen nach Vorgabe */
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%23e4a11b' stroke-width='1.2' opacity='0.08'/%3E%3C/svg%3E");
+            background-size: 35px 62.5px;
+            
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* Platzhalter für Fotos */
+        .foto-placeholder {
+            width: 130px;
+            height: 150px;
+            border: 3px solid #333333;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #555555;
+            flex-shrink: 0;
+        }
+
+        /* Textbereiche in den Boxen */
+        .info-content {
+            flex-grow: 1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Die Rolle / Position im Verein */
+        .rolle {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2b2b2b;
+            margin: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e4a11b; /* Gelber Strich exakt wie das Banner */
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            font-weight: 600;
+        }
+
+        .telefon {
+            margin: 0;
+            color: #555555;
+        }
+
+        /* VARIATIONEN GEMÄSS SKIZZE */
+        
+        /* Box 1: Text rechtsbündig neben dem linken Foto */
+        .box-links-foto .info-content {
+            text-align: right;
+        }
+
+        /* Box 2: Reihenfolge umgekehrt (Text linksbündig, Foto rechts) */
+        .box-rechts-foto {
+            flex-direction: row-reverse;
+        }
+        .box-rechts-foto .info-content {
+            text-align: left;
+        }
+
+        /* Box 3: Text zentriert neben dem linken Foto */
+        .box-zentrum-text .info-content {
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #2b2b2b;
+            color: #ffffff;
+            margin-top: 60px;
+            font-size: 14px;
+            border-top: 4px solid #e4a11b;
+        }
+        footer a {
+            text-decoration: none;
+            color: #e4a11b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header mit Titel -->
+    <header class="site-header">
+        <h1>Imkerverein Greifswald</h1>
+    </header>
+
+    <!-- Navigation (Identisch zu Main.html) -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Historie.html">Historisches</a></li>
+            <li><a href="index.html" class="active">Zur Startseite</a></li>
+            <li><a href="Fotos.html">Dokumente & Fotos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptbereich -->
+    <main class="main-content">
+        
+        <h1 class="page-title">Unser Vereinsvorstand</h1>
+
+        <!-- BOX 1: Foto links, Text rechtsbündig (nach Skizze oben) -->
+        <div class="vorstand-box box-links-foto">
+            <div class="foto-placeholder">Foto</div>
+            <div class="info-content">
+                <div class="rolle">1. Vorsitzende/r</div>
+                <p class="name">Michael Liberra</p>
+            </div>
+        </div>
+
+        <!-- BOX 2: Text linksbündig, Foto rechts (nach Skizze Mitte) -->
+        <div class="vorstand-box box-rechts-foto">
+            <div class="foto-placeholder">Foto</div>
+            <div class="info-content">
+                <div class="rolle">2. Vorsitzende/r</div>
+                <p class="name">Anja Klann</p>
+            </div>
+        </div>
+
+        <!-- BOX 3: Foto links, Text zentriert (nach Skizze unten) -->
+        <div class="vorstand-box box-links-foto">
+    	    <div class="foto-placeholder">Foto</div>
+    	    <div class="info-content">
+                <div class="rolle">Schatzmeister/in</div>
+                <p class="name">Dr. Michaela Harder</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="Impressum.html">Impressum</a> | 
+        <a href="Datenschutz.html">Datenschutzerklärung</a> | 
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Imkerverein Greifswald</title>
+    <style>
+        /* GLOBAL */
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+
+        /* TOP-BAR */
+        .site-header::before {
+            content: "Regional & Naturverbunden seit 1874";
+            display: block;
+            background: #e4a11b; /* Das echte Honiggelb des Verbandes */
+            color: #ffffff;
+            padding: 6px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* HEADER */
+        .site-header {
+            text-align: center;
+            background: #ffffff;
+            padding: 25px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .site-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* NAVIGATION */
+        .main-nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 15px 0;
+            gap: 25px;
+            background: #ffffff;
+            border-bottom: 3px solid #e4a11b;
+        }
+        .main-nav li a {
+            text-decoration: none;
+            color: #444444;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .main-nav li a:hover {
+            color: #e4a11b;
+        }
+
+        /* MAIN LAYOUT */
+        .main-content {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* TEXTBEREICH mit Wabenmuster */
+        .text-sidebar {
+            background-color: #ffffff;
+            padding: 35px;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='%23e4a11b' stroke-width='1.2' opacity='0.12'/%3E%3C/svg%3E");
+            background-size: 35px 62.5px;
+        }
+
+        h2 {
+            color: #2b2b2b;
+            border-bottom: 2px solid #e4a11b;
+            padding-bottom: 5px;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: #2b2b2b;
+            color: #ffffff;
+            margin-top: 60px;
+            font-size: 14px;
+            border-top: 4px solid #e4a11b;
+        }
+        footer a {
+            text-decoration: none;
+            color: #e4a11b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header mit Titel -->
+    <header class="site-header">
+        <h1>Imkerverein Greifswald</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Zur Startseite</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptbereich -->
+    <main class="main-content">
+        <div class="text-sidebar">
+            <h1>Impressum</h1>
+            
+            <h2>Angaben gemäß § 5 DDG</h2>
+            <p>
+                Imkerverein Greifswald e.V. <br>
+                Gersterdingstr. 22 <br>
+                17489 Greifswald <br>
+            </p>
+
+            <h2>Vertreten durch den Vorstand</h2>
+            <p>
+                Michael Liberra, 1. Vorsitzende/r <br>
+                Anja Klann, 2. Vorsitzende/r <br>
+            </p>
+
+            <h2>Kontakt</h2>
+            <p>
+                E-Mail: Greifswald@imkermv.de <br>
+                Internet: www.imkerverein-greifswald-beispiel.de
+            </p>
+
+            <h2>Registereintrag</h2>
+            <p>
+                Eintragung im Vereinsregister <br>
+                Registergericht: Amtsgericht Stralsund <br>
+                Registernummer: VR 4196
+            </p>
+
+            <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+            <p>
+                1. Vorsitzender Michael Liberra <br>
+		Gersterdingstr. 22 <br>
+                17489 Greifswald
+            </p>
+
+            <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <p>Wir sind nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+	<a href="Datenschutz.html">Datenschutzerklärung</a> |
+        <a href="index.html">Zurück zur Startseite</a>
+    </footer>
+
+</body>
+</html>
